@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.0.final using JasperReports Library version 6.12.1-ac0eebdb29e4c0985457bab279a6db744d661530  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StudentReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cc50ac02-4277-4755-85f0-632991912917">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<queryString language="SQL">
+		<![CDATA[select Date, Dept,Tid, Remarks,Marks from Self_Reliance where sid='174422']]>
+	</queryString>
+	<field name="Date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Self_Reliance"/>
+	</field>
+	<field name="Dept" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Dept"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Self_Reliance"/>
+	</field>
+	<field name="Tid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Tid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Self_Reliance"/>
+	</field>
+	<field name="Remarks" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Remarks"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Self_Reliance"/>
+	</field>
+	<field name="Marks" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="Marks"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Self_Reliance"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="90" y="10" width="420" height="60" uuid="e64efcd1-4a86-4cdd-b795-88f6f9138c60"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Sri Satya Sai Institute Of Higher Learning,                                  Muddenahalli Campus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="70" width="294" height="51" uuid="aa7eb5c2-10e7-4fd6-946b-a324ace9485d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Feedback report for 6 semester]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="10" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="19" y="0" width="111" height="30" uuid="79a154b1-54d8-406f-933f-8af607f7a75d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c679d07d-8410-4cfa-afc1-e5d007783ef0"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="0" width="111" height="30" uuid="f8a5a43e-0579-41f0-a314-4752cfecdbb3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="39178f83-828b-4a3f-83ff-b9c33d02226c"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="232" y="0" width="111" height="30" uuid="534c503e-2798-4f6f-b6ba-39bbdc5ea7d1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38e5a4bc-ca71-427c-9154-d7f2f69f0ca3"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="412" y="0" width="111" height="30" uuid="4e3f00bc-14ee-4e74-a238-fdb5ba2bd011">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7e3b7ae0-59e8-4ae7-8d89-197328d3661d"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Marks]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="19" y="0" width="111" height="30" uuid="86ae0618-a151-4bf1-9bf8-733696034113">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c679d07d-8410-4cfa-afc1-e5d007783ef0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="1" width="111" height="30" uuid="10a05ea5-8ae2-46db-8cda-7726b612ccb4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="39178f83-828b-4a3f-83ff-b9c33d02226c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Tid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="111" height="30" uuid="f8984e74-75ee-48db-8e96-cb4ce33f9839">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38e5a4bc-ca71-427c-9154-d7f2f69f0ca3"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Remarks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="0" width="111" height="30" uuid="b1c41377-1e83-4388-b738-c57fca7ecf19">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7e3b7ae0-59e8-4ae7-8d89-197328d3661d"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Marks}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="79" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

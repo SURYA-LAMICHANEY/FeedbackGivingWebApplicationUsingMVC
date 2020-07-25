@@ -1,0 +1,124 @@
+@charset "UTF-8";
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.container {
+  position: relative;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color:white;
+  
+}
+.btns {
+  background-color:#009788 ;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 111%;
+  opacity: 0.9;
+  
+}
+
+.btns:hover {
+  opacity: 1;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  width:100%;
+}
+.success {
+  padding: 20px;
+  background-color: #90EE90;
+  color: white;
+  width:100%;
+}
+body{margin-left: 500px;
+  margin-top: 200px;
+  margin-right: 600px;
+  margin-bottom: 200px;}
+.closebtn {
+  
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  
+}
+
+.form__field {
+  font-family: inherit;
+  width: 50%;
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  outline: 0;
+  font-size: 16px;
+  color: #212121;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+
+label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.form__field:focus ~ .form__label {
+  color: #009788;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #009788;
+}
+#header
+{
+    margin:0 auto;
+    background: url(images/front.png) 0 0 no-repeat;
+    width:721px;
+    height:282px;
+
+}

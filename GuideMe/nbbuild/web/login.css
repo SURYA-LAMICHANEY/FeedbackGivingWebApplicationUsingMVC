@@ -1,0 +1,15 @@
+﻿﻿
+ 
+
+
+	/* CSS Document */ 
+#header {
+	padding: 200px 70px 70px 200px;
+	margin: 0 auto;
+	background: pink
+		url(home/bca3/eclipse-workspace/loginApp/images/front.jpg) 0 0
+		no-repeat;
+	width: 1080px;
+	height: 350px;
+	border: 1px solid pink;
+}
